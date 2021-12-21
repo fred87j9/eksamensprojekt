@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Candidates</title>
+
+
+</head>
+
+<body>
+
+<table>
+    <thead>
+    <tr>
+        <td>First Name</td>
+        <td>Last Name</td>
+        <td>Commune</td>
+        <td>Initialer</td>
+        <td>Parti</td>
+
+    </tr>
+    </thead>
+    <tbody id="candidates-table"></tbody>
+</table>
+
+<label for="firstName">First Name</label>
+<input type="text" id="firstName" name="input-firstName">
+
+<label for="lastName">Last Name</label>
+<input type="text" id="lastName" name="input-lastName">
+
+<label for="communes">Communes</label>
+<input type="text" id="communes" name="input-communes">
+
+<label for="id">Id</label>
+<input type="number" id="id" name="input-id">
+
+<button type="button" id="submit">Submit </button>
+<br>
+<input type="text" id="search" onkeyup="orderTable()" placeholder="Search By Initials" title="Type in a name">
+<br>
+<a href="vote.html">
+<button type="button" id="votes">Click to see the votes!</button>
+</a>
+</body>
+<script src="candidate.js"></script>
+
+</html>
