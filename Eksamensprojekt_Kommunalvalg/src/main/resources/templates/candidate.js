@@ -91,6 +91,7 @@ const candidateToUpdate = {
         body: JSON.stringify(candidateToUpdate)
     }).then(response => {
         if (response.status === 200) {
+            window.location.replace(window.location.href);
             createTableRow(candidateToUpdate,tableRowToUpdate)
         }
     });
